@@ -1,0 +1,30 @@
+https://public.tableau.com/profile/brett.schneider6232#!/vizhome/January2020BikeTrips/JanuaryBikeTrips?publish=yes
+
+I built two dashboards and 1 story.
+
+Dashboard 1: January Bike Trips
+
+The purpose of this dashboard is to tell the story of one bike.  The dashboard allows you to filter on a bike and will show a number of visuals:
+
+The first is the map of the bike path over the month.  I used a couple clever tricks to make this happen. I had to assign each trip a number in a python file.  I had to use the 'Line' display on the map to enable the 'Path' options in which I used the trip number to tell the path.  If you hover over a particular trip you get information about that by trip.
+
+Next is the gender visualization which shows the which genders used the bike more.
+
+To the right of that is total trip time.  It shows you how many minutes the bike has been in use.
+
+The bottom graphic shows which stations the bike frequented.
+
+Something interesting to learn was how manipulate a filter to only allow for one selection and then to use that filter to control all other tabs on just that dashboard and not other worksheets within the workbook.
+
+Dashboard 2: High Level Metrics
+
+I wanted to show some high level metrics and trends.  
+
+The first visualization is of the gender of riders in January of 2020.  You can see it's largley male dominated.  One thing to note is these are aggregate numbers.  We don't have member IDs, so we can't analyze unique members and their age/gender/customer type.
+
+The second visualization is to analyze which type of user rides citibikes.  Subscribers are people who pay for a monthly/yearly subscription vs. customers who pay for a one time use. You can see the business model is largely dominated by subscribers, which to me is a good thing.  The issue is that the data is skewed because we can't see unique subscribers and I would assume that a subscriber would use citibike over and over in order to maximize their member benefits because they're not charged by the ride.  One cool thing I did for this visualization was a table calc to calculate % of total
+
+The third visualization is age.  This required to calculate age, which was a fairly straightforward formula.  There is a large target demographic.  From 23-63 with the peak being in age 25-41.  There seems to be an abnormality at age 51.  This would require further investigation because this could be due to a handful of subscribers at age 51 driving most of the activity.  It's hard to believe that a handful of riders would drive that much abnormailty, but it needs to be investigated. You can see some people lied about their age because people between the ages of 90-135(!) are documented.  There are no 135 year olds.  It also appears that you have to be 17 in order to sign up.
+
+Story: Bike Trip Story
+This story is similar to the first dashboard 'January Bike Trips'.  It tells the same story, uses the same graphs, just in story form rather than dashboard form.  Good for marketing.  
